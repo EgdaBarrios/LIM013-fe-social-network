@@ -124,9 +124,9 @@ body {
     width: 10%;
     height: 30px;
     margin-top: 5px;
-    margin-left: 6px;
+    margin-left: 10px;
     display: inline-block;
-    background-image: url(images/quinnbee_mini.png);
+    background-image: url(images/user-circle.png);
     background-size: 70%;
     background-repeat: no-repeat;
 }
