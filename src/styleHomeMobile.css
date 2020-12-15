@@ -2,8 +2,7 @@
 
 @media screen and (max-width: 768px) {
     .homeBodyWrapper {
-        width: 100%;
-        
+        width: 100%;        
         flex-direction: column;            
     }
 
@@ -45,77 +44,8 @@
     
     .mainHome {
         width: 80%; 
-        margin-left: 7%;       
-        align-self: center;
-    }
-
-    
-    .newPostContainer {
-        width: 100%;
-        padding-top: 0px;
-        margin-bottom: 10px;
-    }
-    
-    .newPostForm {
-        width: 300px;
-    }
-
-    .newPostInputText {
-        width: 260px;
-    }
-    
-    .separator {
-        width: 280px;
-    }
-
-    .postButton {
-        margin-right: 10px;
-    }
-
-    /**********postList************/
-    .postForm {
-        width: 300px;
-    }
-
-    .topUDContainer {
-        height: 25px;
-    }
-
-    .iconLeftPost {
-        width: 12%;
-        height: 25px;
-        margin-top: 5px;
-        margin-left: 5px;
-    }
-
-    .rightTextPost {
-        width: 50%;        
-        margin-left: 0px;        
-        padding-top: 10px;
-    }
-
-    .loggedUsr {
-        height: 20px;
-        font-size: 14px;
-        
-    }
-    
-    .postDate {
-        font-size: 8px;
-    }
-
-    .deletePost {
-        width: 15%;        
-        padding-top: 10px;
-    }
-
-    .deletePostButton {
-        width: 20px;
-        height: 20px;
-        font-size: 26px;
-    }
+    }    
 }
-
 
 /**********homeView Mobile (360px x 640px)****************************/
 /**********homeView Mobile mini (320px x 480px)***********************/
@@ -134,26 +64,6 @@
         align-self: center;
     }
     
-    .newPostContainer {
-        padding-top: 0px;
-    }
-
-    .newPostForm {
-        width: 300px;
-    }
-    
-    .newPostInputText {
-        width: 260px;
-    }
-    
-    .separator {
-        width: 280px;
-    }
-    
-    .postButton {
-        margin-right: 10px;
-    }
-
     /**********aside left**********/
     .left {
         width: 100%;

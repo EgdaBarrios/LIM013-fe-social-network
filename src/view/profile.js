@@ -1,3 +1,8 @@
+/* eslint-disable no-plusplus */
+import postView from './post.js';
+/* eslint-disable no-console */
+/* eslint-disable no-undef */
+
 export default () => {
   const profileView = `
     <section class="profileBodyWrapper">
@@ -59,18 +64,7 @@ export default () => {
         </section>
       </aside>
       <main class="mainHome">
-        <section class="newPostContainer">
-          <form class="newPostForm">
-            <section class="form-groupPost">
-              <input type="text" placeholder="What have you been up to lately?" id="newPostText" name="newPostText" class="newPostInputText" ><br>
-              <hr class="separator">
-            </section>
-            <section class="form-groupPost">
-              <section class="callToAction">
-                <button type="button" class="postButton" id="postButton">POST</button>
-              </section>
-            </section>
-          </form>
+        <section class="postContainer" id="postContainer">          
         </section>
       </main>
       <aside></aside>
@@ -81,6 +75,9 @@ export default () => {
     const sectionElement = document.createElement('section');
     //sectionElement.classList.add('position');
     sectionElement.innerHTML = profileView;
+
+    const sectionPost = sectionElement.querySelector('#postContainer');
+    sectionPost.appendChild(postView());
 
     return sectionElement;
 }

@@ -13,26 +13,6 @@
         align-self: center;
     }
     
-    .newPostContainer {
-        padding-top: 0px;
-    }
-
-    .newPostForm {
-        width: 300px;
-    }
-    
-    .newPostInputText {
-        width: 260px;
-    }
-    
-    .separator {
-        width: 280px;
-    }
-    
-    .postButton {
-        margin-right: 10px;
-    }
-
     /**********aside left**********/
     
     .leftProfile {
@@ -45,26 +25,27 @@
 
     .userData {    
         margin-left: -190px;
+        margin-top: -10px;
     }
 
     .heroPhoto {
-        width: 300px;
-        height: 160px;        
+        width: 520px;
+        height: 280px;        
         margin-top: 0px;
         background-image: url(images/hero_photo_mobile.jpg);
         background-size: cover;
     }
     
     .userPhoto {
-        width: 70px;
-        height: 70px;
-        margin-top: -30px;
+        width: 90px;
+        height: 90px;
+        margin-top: -45px;
     }
     
     .userName {
         width: 165px;
         height: 40px;
-        font-size: 14px;
+        font-size: 18px;
         white-space:nowrap;
     }
     
@@ -82,8 +63,8 @@
 
     .profileLinksMobile {
         display: block;
-        width: 300px;
-        height: 60px;
+        width: 520px;
+        height: 80px;
         margin-right: auto;
         margin-left: auto; 
     }
@@ -91,8 +72,8 @@
     .subtitleLeft {
         width: 50%;
         margin-right: 5px;
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding-top: 17px;
+        padding-bottom: 17px;
         border-radius: 5px;
         color:  grey;
         background-color:  white;
@@ -101,8 +82,8 @@
     .subtitleRight {
         width: 50%;
         margin-left: 5px;
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding-top: 17px;
+        padding-bottom: 17px;
         border-radius: 5px;
         color: white;
         background-color: rgb(54, 4, 83);
@@ -127,26 +108,6 @@
         align-self: center;
     }
     
-    .newPostContainer {
-        padding-top: 0px;
-    }
-
-    .newPostForm {
-        width: 300px;
-    }
-    
-    .newPostInputText {
-        width: 260px;
-    }
-    
-    .separator {
-        width: 280px;
-    }
-    
-    .postButton {
-        margin-right: 10px;
-    }
-
     /**********aside left**********/
     
     .leftProfile {

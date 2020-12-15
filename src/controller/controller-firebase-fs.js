@@ -19,3 +19,11 @@ export const createPost = (post, author) => {
         console.error('Error adding document: ', error);
       });
 };
+
+// Eliminar post
+/*
+export const deletePost = (docRefID) => {
+  const fs = firebase.firestore();
+  return fs.collection('userPosts').doc(docRefID).delete();
+};
+*/

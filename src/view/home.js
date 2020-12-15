@@ -1,5 +1,5 @@
 /* eslint-disable no-plusplus */
-import { homeController } from '../view-controler/home-controller.js';
+import postView from './post.js';
 /* eslint-disable no-console */
 /* eslint-disable no-undef */
 
@@ -109,20 +109,8 @@ export default () => {
         </section>
       </aside>
       <main class="mainHome">
-        <section class="newPostContainer" id="newPostContainer">
-          <form class="newPostForm" id="newPostForm">
-            <section class="form-groupPost">
-              <input type="text" placeholder="What have you been up to lately?" id="newPostText" name="newPostText" class="newPostInputText" ><br>
-              <hr class="separator">
-            </section>
-            <section class="form-groupPost">
-              <section class="callToAction">
-                <button type="button" class="postButton" id="postButton">POST</button>
-              </section>
-            </section>
-          </form>
+        <section class="postContainer" id="postContainer">          
         </section>
-        <ul class="postList" id="postList"></ul>
       </main>
       <aside></aside>
     </section>
@@ -132,70 +120,8 @@ export default () => {
   //sectionElement.classList.add('position');
   sectionElement.innerHTML = homeView;
 
-  // Accion del boton POST (newPost)
-  const postBtn = sectionElement.querySelector('#postButton');
-  postBtn.addEventListener('click', () => {
-    homeController.actionPost(sectionElement);
-  });
-
-  // Pintando post en el home
-  const ulElement = sectionElement.querySelector('#postList');
-  const printPost = (dataPost) => {
-    const liTemplate = `
-      <section class="postContainer">
-        <form class="postForm" id="postForm">
-          <section class="form-groupPost">
-            <table class="topUserData">
-              <tr class="topUDContainer">
-                <td class="iconLeftPost">
-                </td>
-                <td class="rightTextPost">
-                  <p class="loggedUsr">${dataPost.loggedUser}<br>
-                  <span class="postDate">${dataPost.date}</span></p>
-                </td>
-                <td class="deletePost">
-                  <button type="button" class="deletePostButton" id="deletePostButton"><i class="far fa-window-close"></i></button>
-                </td>
-              </tr>
-            </table>
-            <hr class="separator">
-          <section class="form-groupPost">
-            <p class="postInputTextContent">${dataPost.postTextContent}</p>
-            <hr class="separator">
-          </section>
-          <section class="form-groupPost">
-            <section class="otherUsersReaction">
-              <button type="button" class="likeButton" id="likeButton"></button>
-              <button type="button" class="shareButton" id="shareButton"></button>
-            </section>
-          </section>
-        </form>
-      </section>     
-    `;
-
-    // Insertando el template en la interfaz
-    const liElement = document.createElement('li');
-
-    liElement.innerHTML = liTemplate;
-    ulElement.appendChild(liElement);
-  };
-
-  const printPostList = (userPosts) => {
-    ulElement.innerHTML = '';
-    userPosts.forEach((post) => {
-      printPost(post);
-    });
-  };
-
-  // listado
-  const fs = firebase.firestore();
-  fs.collection('userPosts').orderBy('date', 'desc').onSnapshot((querySnapshot) => {
-    const posts = [];
-    querySnapshot.forEach((doc) => {
-      posts.push(doc.data());
-    });
-    printPostList(posts);
-  });
+  const sectionPost = sectionElement.querySelector('#postContainer');
+  sectionPost.appendChild(postView());
   
-  return sectionElement;
+  return sectionElement;  
 };
