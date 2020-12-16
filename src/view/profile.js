@@ -1,5 +1,6 @@
 /* eslint-disable no-plusplus */
 import postView from './post.js';
+import { postController } from '../view-controler/post-controller.js';
 /* eslint-disable no-console */
 /* eslint-disable no-undef */
 
@@ -76,8 +77,9 @@ export default () => {
     //sectionElement.classList.add('position');
     sectionElement.innerHTML = profileView;
 
+    // Mostrando solo los post del usuario al cargar la página
     const sectionPost = sectionElement.querySelector('#postContainer');
     sectionPost.appendChild(postView());
-
+    
     return sectionElement;
 }

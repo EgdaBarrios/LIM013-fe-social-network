@@ -1,7 +1,6 @@
 /* eslint-disable no-alert */
-
 /* eslint-disable no-console */
 
-export const homeController = {
+export const profileController = {
     
 };

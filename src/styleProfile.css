@@ -32,14 +32,6 @@ body {
     background-color: none;
 }
 
-.postList {
-    display: none;
-}
-
-.userPostList {
-    display: block;
-}
-
 /**********aside left**********/
 .leftProfile {
     width: 24%;

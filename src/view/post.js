@@ -17,7 +17,6 @@ export default () => {
                 </form>
             </section>
             <ul class="postList" id="postList"></ul>
-            <ul class="userPostList" id="userPostList"></ul>
         </section>
     `;
   
@@ -32,7 +31,7 @@ export default () => {
     postController.actionPost(sectionElement);
   });
 
-  // Pintando post en el home
+  // Pintando post 
   const ulElement = sectionElement.querySelector('#postList');
   const printPost = (dataPost) => {
     const liTemplate = `

@@ -34,14 +34,6 @@ body {
     background-color: none;
 }
 
-.postList {
-    display: block;
-}
-
-.userPostList {
-    display: none;
-}
-
 /**********aside left**********/
 .leftHome {
     width: 24%;
