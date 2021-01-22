@@ -37,7 +37,7 @@ acceso y loguearse con ella; crear, editar, borrar y _"likear"_ publicacciones.
 ## 3. Objetivos de aprendizaje
 
 El objetivo principal de aprendizaje de este proyecto es construir una
-[Single-page Application (SPA)](https://es.wikipedia.org/wiki/Single-page_application) que se adapte 
+[Single-page Application (SPA)](https://es.wikipedia.org/wiki/Single-page_application) que se adapte
 al patrón modelo - vista - controlador [MVC](https://es.wikipedia.org/wiki/Modelo%E2%80%93vista%E2%80%93controlador)
 y que sea [_responsive_](https://github.com/Laboratoria/curricula-js/tree/master/topics/css/02-responsive)
  (con más de una vista / página) en la que podamos **leer, escribir, actualizar y
@@ -150,10 +150,10 @@ que detalles:
 ### 5.2 Historias de usuario
 
 Para este proyecto vamos a entregarte las Historias de  Usuario para tú junto a tu equipo
-puedan escribir los criterios de aceptación y definición determinado de cada una. Recuerda 
+puedan escribir los criterios de aceptación y definición determinado de cada una. Recuerda
 priorizar la implementación de tus funcionalidades, en función al esfuerzo que demandan en
 relación al valor que le aportan al usuario, y ejecutar en equipo todas las historias de
-usuario dentro del tiempo estimado para cada sprint y que finalmente se vean reflejadas 
+usuario dentro del tiempo estimado para cada sprint y que finalmente se vean reflejadas
 en publicaciones completamentamente funcionales al final de cada sprint.
 
 * Como usuario nuevo debo poder crear una cuenta con email y password válidos para ingresar
@@ -181,10 +181,10 @@ Te dejamos un ejemplo de cómo definir criterios de aceptación y definiciones d
    >
    > **Criterios de Aceptación:** todo lo que debe ocurrir para satisfacer las
    > necesidades del usuario.
-   > - Si el mail o password no es válido, al momento de logearme, debo poder 
+   > - Si el mail o password no es válido, al momento de logearme, debo poder
    >   ver un mensaje de error.
    > - Debe ser visible si hay algún mensaje de error.
-   > - Debo poder ver esta página de creación en Móviles y desktop (responsive). 
+   > - Debo poder ver esta página de creación en Móviles y desktop (responsive).
    > - No debe necesitar recargar la página para crear una cuenta (SPA).
    >
    > **Definición de terminado:** todos los aspectos técnicos que deben cumplirse
@@ -195,12 +195,12 @@ Te dejamos un ejemplo de cómo definir criterios de aceptación y definiciones d
    > - La funcionalidad cumple y satisface los criterios de aceptación.
    > - La funcionalidad tiene _test unitarios_.
    > - El diseño visual corresponde al prototipo propuesto.
-   > - El código de esta funcionalidad recibió code review de una o dos compañeras 
+   > - El código de esta funcionalidad recibió code review de una o dos compañeras
    > de otro equipo.
-   > - La funcionalidad esta desplegada y pública para ser probada. 
+   > - La funcionalidad esta desplegada y pública para ser probada.
    > - La funcionalidad fue probada manualmente buscando errores e imperfecciones simples..
    > - La página es responsive (mobile first)
-   > - Se hicieron pruebas de usuabilidad y se implementó el feedback si se 
+   > - Se hicieron pruebas de usuabilidad y se implementó el feedback si se
    >   consideró necesario.
 
 
@@ -229,7 +229,7 @@ fidelidad.
 * Contar con múltiples vistas. Para esto, tu aplicación debe ser una
  [Single Page Application (SPA)](https://es.wikipedia.org/wiki/Single-page_application).
  Te recomendamos revisar la [Píldora de SPA](https://www.loom.com/share/fa63a8ad0e9a43428222c15b6f6613d3) que también
- puedes encontrar en la sección de recursos al final del `Readme.md`. De igual manera puedes revisar 
+ puedes encontrar en la sección de recursos al final del `Readme.md`. De igual manera puedes revisar
  [este repositorio](https://github.com/merunga/todomvc-vanillajs) donde puedes ver cómo construir un To-do MVC con `vanillajs`.
 * Debe ser responsive por lo cual debe verse bien en dispositivos de pantallas grandes
 (computadoras/es, laptops, etc.) y pequeñas (_tablets_, celulares, etc.). Te
@@ -328,5 +328,10 @@ Para esto utilizaras respectivamente
 * [Mobile First - desarrolloweb.com](https://desarrolloweb.com/articulos/mobile-first-responsive.html)
 * [Mobile First - ZURB](https://zurb.com/word/mobile-first)
 * [Mobile First Is NOT Mobile Only - Nielsen Norman Group](https://www.nngroup.com/articles/mobile-first-not-mobile-only/)
+
+## 8. Vistas de la aplicación
+
+### Vista en desktop
+![prototipo desktop](src/images/index-html-desktop.jpg)
 
 ***
