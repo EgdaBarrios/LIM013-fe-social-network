@@ -92,6 +92,16 @@ export default () => {
 
   // Eliminar post
   /*
+  const deleteBtn = liTemplate.querySelector('#deletePostButton');
+    console.log(deleteBtn);
+    */
+  /*
+  const deleteBtn = sectionElement.querySelector('#deletePostButton');
+  deleteBtn.addEventListener('click', () => {
+    console.log('delete post');
+  });
+  */
+  /*
   const liElement = document.querySelector('#postList');
   console.log(liElement);
   const deletePostBtn = document.querySelector('#deletePostButton');

@@ -332,6 +332,6 @@ Para esto utilizaras respectivamente
 ## 8. Vistas de la aplicación
 
 ### Vista en desktop
-![prototipo desktop](src\images\prototipoAltaVistas.png)
+![prototipo alta](src\images\prototipo.png)
 
 ***
